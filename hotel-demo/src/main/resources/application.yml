@@ -1,0 +1,28 @@
+server:
+  port: 8089
+spring:
+  rabbitmq:
+    host: 192.168.200.131
+    port: 5672
+    username: itcast
+    password: 123321
+    virtual-host: / #虚拟主机
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/heima?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: 1234
+  main:
+    banner-mode: off
+#logging:
+#  level:
+#    cn.itcast: debug
+#  pattern:
+#    dateformat: MM-dd HH:mm:ss:SSS
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    banner: false
+#  type-aliases-package: com.vince.hotel.pojo
